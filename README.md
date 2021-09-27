@@ -18,7 +18,7 @@ The last command locks you into a live log reader. After a little bit, [LogMonit
 ### Dockerfile
 - Uses ASP.NET 4.8 on Windows Server core 2019 LTSC. Auto-installs IIS. (WebServer)
 - Powershell ErrorAction is modified to allow [LogMonitor](https://github.com/microsoft/windows-container-tools/tree/master/LogMonitor) and [ServiceMonitor](https://github.com/Microsoft/IIS.ServiceMonitor) to throw warnings without critical failure.
-- LOGMONITor_VERSION is used to download the desired version of LogMonitor.
+- LOGMONITOR_VERSION is used to download the desired version of [LogMonitor](https://github.com/microsoft/windows-container-tools/tree/master/LogMonitor).
 - Configs and startup are copied.
 - curl.exe is used to download [LogMonitor](https://github.com/microsoft/windows-container-tools/tree/master/LogMonitor).
 - start.ps1 is the ENTRYPOINT.
